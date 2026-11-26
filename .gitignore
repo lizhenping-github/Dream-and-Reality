@@ -1,8 +1,9 @@
 # 依赖目录
 node_modules/
 
-# 构建产物（打包的 exe / zip / win-unpacked）
-dist/
+# 构建产物：dist 内只保留对外分发的 exe，其余（zip、win-unpacked 等）全部忽略
+**/dist/*
+!**/dist/*.exe
 
 # 临时诊断日志
 _exit_log.txt
