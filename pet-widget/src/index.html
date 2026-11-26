@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>桌面宠物小组件</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 舞台：留透明边距，方便显示阴影与拖拽 -->
+  <div id="stage">
+    <div id="card">
+      <!-- 左侧：倒计时与统计 -->
+      <div id="left">
+        <div id="label">距离下班还有</div>
+        <div id="time">00 : 00 : 00</div>
+        <div id="stats">
+          <div class="stat">
+            <div class="t">周五</div>
+            <div class="v" id="statWeek">0<i>天</i></div>
+          </div>
+          <div class="stat">
+            <div class="t">发薪</div>
+            <div class="v" id="statPay">0<i>天</i></div>
+          </div>
+          <div class="stat money">
+            <div class="t">今天赚了</div>
+            <div class="v"><span id="statMoney">0.00</span><i>¥</i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右侧：宠物（可点击互动） -->
+      <div id="right">
+        <div id="bubble">喵～</div>
+        <div id="petArea" class="no-drag">
+          <img id="petImg" alt="宠物" draggable="false" />
+          <div id="fx"></div>
+        </div>
+        <div id="petName">橘座</div>
+      </div>
+
+      <!-- 右下角缩放手柄 -->
+      <div id="grip" class="no-drag" title="拖动缩放"></div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

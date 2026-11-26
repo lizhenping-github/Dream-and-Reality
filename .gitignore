@@ -1,0 +1,21 @@
+# 依赖目录
+node_modules/
+
+# 构建产物（打包的 exe / zip / win-unpacked）
+dist/
+
+# 临时诊断日志
+_exit_log.txt
+_embed_log.txt
+
+# 截图草稿目录
+.screenshots/
+
+# 日志文件
+*.log
+npm-debug.log*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,30 @@
+{
+  "name": "desktop-pet-countdown",
+  "version": "1.0.0",
+  "description": "桌面宠物下班倒计时小组件 - 可拖动、缩放、替换宠物图片（支持GIF）",
+  "main": "main.js",
+  "author": "pet-widget",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable zip"
+  },
+  "build": {
+    "appId": "com.petwidget.countdown",
+    "productName": "desktop-pet-countdown",
+    "artifactName": "桌面宠物小组件-${version}.${ext}",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "icon": "assets/pet-widget.ico",
+      "target": ["portable", "zip"]
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^26.18.0"
+  }
+}
