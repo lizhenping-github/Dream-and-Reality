@@ -1,12 +1,18 @@
 
 
+<div align="center">
+
 # 🐾 Dream & Reality
 
 **桌面宠物 · 下班倒计时小组件**
 
 *生活是孵化梦想的土壤，梦想，纯属做梦……*
 
+![桌面宠物小组件效果预览](docs/preview.png)
+
 `Electron 33` · `Windows 10/11` · `免安装便携版`
+
+</div>
 
 ---
 
